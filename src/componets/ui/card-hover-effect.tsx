@@ -38,7 +38,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-cerulean dark:bg-slate-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -56,7 +56,7 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Cardv> */}
-              <Card className="py-4 h-full border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
+              <Card className="py-4 h-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue">
                   <CardHeader className="overflow-visible py-2">
                       <Image
                           alt="Card background"
@@ -66,9 +66,9 @@ export const HoverEffect = ({
                       />
                   </CardHeader>
                   <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
-                      <h4 className="font-bold text-large tracking-wide">{item.title}</h4>
-                      <small className="text-default-500 text-medium tracking-wide">{item.subtitle}</small>
-                      <p className="tracking-wide leading-relaxed">{item.description}</p>
+                      <h4 className="font-bold text-large text-java tracking-wide">{item.title}</h4>
+                      <small className="text-corn text-base tracking-wide">{item.subtitle}</small>
+                      <p className="text-white tracking-wide leading-relaxed">{item.description}</p>
                   </CardBody>
               </Card>
         </Link>
