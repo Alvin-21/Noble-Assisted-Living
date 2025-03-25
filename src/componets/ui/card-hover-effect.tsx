@@ -31,7 +31,7 @@ export const HoverEffect = ({
         <Link
           href={item?.link}
           key={item?.link}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -61,7 +61,7 @@ export const HoverEffect = ({
                       <Image
                           alt="Card background"
                           className="object-cover rounded-xl"
-                          src="https://heroui.com/images/hero-card-complete.jpeg"
+                          src="/images/assisted-living-2.jpg"
                           width={270}
                       />
                   </CardHeader>
