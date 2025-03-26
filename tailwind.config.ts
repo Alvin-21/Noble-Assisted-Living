@@ -27,6 +27,8 @@ const config: Config = {
         'cerulean': '#04A9EF',
         'off-white': '#acacac',
         'dark-blue': '#02658f',
+        'light-corn': '#FBCC13',
+        'dark-corn': '#D4AA04',
       },
     },
   },
