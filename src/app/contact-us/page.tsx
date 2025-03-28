@@ -8,7 +8,7 @@ export default function Page() {
         <>
             <div className="h-[10vh] mt-8 container mx-auto">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
-                <h4 className="inline text-lg text-dark-corn font-semibold"> About Us</h4>
+                <h4 className="inline text-lg text-dark-corn font-semibold"> Contact Us</h4>
                 <div className="pt-3"></div>
                 <hr className="border-b-2 border-b-java border-dashed" />
             </div>
