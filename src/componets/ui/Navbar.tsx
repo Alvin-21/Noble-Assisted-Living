@@ -1,10 +1,21 @@
 'use client';
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@heroui/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@heroui/react";
 import Image from 'next/image';
 import logo from '@/../public/images/Logo.png';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+
+const links = [
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Services', href: '/services' },
+  { name: 'Contact Us', href: '/contact-us' },
+];
 
 export default function Nav() {
+  const pathname = usePathname();
+
   return (
     <Navbar className="bg-gradient-to-r from-charcoal-gray to-corn">
       <NavbarBrand>
@@ -12,26 +23,24 @@ export default function Nav() {
         <span className="font-bold text-2xl pl-3 text-java">Noble Assisted</span>
         <span className="font-bold text-2xl pl-1 text-corn">Living</span>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-10" justify="end">
-        <NavbarItem isActive>
-          <Link className="text-[#02658f]" aria-current="page" href="#">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-black" href="#">
-            About Us
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-black" href="#">
-            Services
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-black" href="#">
-            Contact Us
-          </Link>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden sm:flex gap-10">
+          {links.map((link) => {
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={clsx(
+                  "text-black",
+                  {
+                    'text-dark-blue border-b-dark-blue pb-0.5 border-b-2': pathname === link.href,
+                  },
+                )}
+              >
+                <p className="">{link.name}</p>
+              </Link>
+            );
+          })}
         </NavbarItem>
       </NavbarContent>
     </Navbar>
