@@ -3,6 +3,11 @@ import { ExpandableCard } from "@/componets/ui/ExpandableCard";
 import { ParallaxScrollDemo } from "@/componets/ui/ParallaxScroll";
 import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import { HeartIcon } from "@heroicons/react/24/outline";
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'About-Us',
+};
 
 export default function Page() {
     return (

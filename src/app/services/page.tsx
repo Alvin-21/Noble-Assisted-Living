@@ -5,6 +5,11 @@ import pic2 from '@/../public/images/assisted-living-13.jpg';
 import pic3 from '@/../public/images/assisted-living-8.jpg';
 import pic4 from '@/../public/images/assisted-living-2.jpg';
 import pic5 from '@/../public/images/assisted-living-7.jpg';
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Services',
+};
 
 export default function Page() {
     return (

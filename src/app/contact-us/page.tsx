@@ -2,6 +2,11 @@ import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import { Input, Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { FaceSmileIcon } from "@heroicons/react/24/outline";
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Contact-Us',
+};
 
 export default function Page() {
     return (
