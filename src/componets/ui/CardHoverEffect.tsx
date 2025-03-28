@@ -12,28 +12,28 @@ export const projects = [
     title: "Activities",
     subtitle: "Of Daily Living",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.Aenean lobortis erat ac lectus viverra.",
     link: "https://stripe.com",
   },
   {
     title: "Nursing",
     subtitle: "Services",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.",
     link: "https://netflix.com",
   },
   {
     title: "Recreational",
     subtitle: "Programs",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. ",
     link: "https://google.com",
   },
   {
     title: "24-Hour Staff",
     subtitle: "Availability",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur, vitae accumsan erat pharetra.",
     link: "https://meta.com",
   }
 ];
