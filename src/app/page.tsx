@@ -21,7 +21,7 @@ export default function Home() {
           <p className="pt-4 mb-7 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sit amet risus at fringilla. Cras id ante mollis, faucibus neque id, varius risus. Suspendisse convallis commodo vehicula.</p>
           <Button
             as={Link}
-            href="#"
+            href="/about-us"
             variant="solid"
             className="rounded-md bg-cerulean text-white"
           >

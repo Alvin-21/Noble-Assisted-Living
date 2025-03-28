@@ -6,6 +6,7 @@ import pic3 from '@/../public/images/assisted-living-8.jpg';
 import pic4 from '@/../public/images/assisted-living-2.jpg';
 import pic5 from '@/../public/images/assisted-living-7.jpg';
 import { Metadata } from 'next';
+import ServicesArrowDown from "@/componets/ui/ServicesArrowDown";
  
 export const metadata: Metadata = {
   title: 'Services',
@@ -15,7 +16,9 @@ export default function Page() {
     return (
         <>
             <Image className="h-[83vh]" src={pic} alt="A person helping an elderly with their groceries." />
-            <h1 className="h-[8vh] bg-cerulean text-light-corn text-3xl flex justify-center pt-2 font-bold">Services</h1>
+            <div className="h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
+                <ServicesArrowDown />
+            </div>
             <div className="h-[10vh] mt-8 container mx-auto">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
