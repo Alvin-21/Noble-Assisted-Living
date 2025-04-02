@@ -6,7 +6,6 @@ import {
     Container,
     Heading,
     Text,
-    Preview,
 } from "@react-email/components";
 
 import { Tailwind } from "@react-email/tailwind";
@@ -22,11 +21,10 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     <Tailwind>
         <Html>
             <Head />
-            {/* <Preview>Email preview text</Preview> */}
             <Body className="bg-[#02658f]">
-                <Container className="max-w-2xl mx-auto p-8 bg-white rounded-lg">
+                <Container className="my-4 max-w-2xl mx-auto p-8 bg-white rounded-lg">
                     <Heading className="text-2xl font-bold text-[#04A9EF] inline">
-                        General Enquiry |
+                        General Enquiry | 
                     </Heading>
                     <Heading className="text-2xl font-bold text-[#D4AA04] inline">
                         Website Contact Form
