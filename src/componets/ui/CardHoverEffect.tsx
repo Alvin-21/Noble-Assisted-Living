@@ -9,6 +9,7 @@ export function CardHoverEffect() {
 }
 export const projects = [
   {
+    image: "/images/assisted-living-13.jpg",
     title: "Activities",
     subtitle: "Of Daily Living",
     description:
@@ -16,6 +17,7 @@ export const projects = [
     link: "/services#activity",
   },
   {
+    image: "/images/assisted-living-8.jpg",
     title: "Nursing",
     subtitle: "Services",
     description:
@@ -23,6 +25,7 @@ export const projects = [
     link: "/services#nursing",
   },
   {
+    image: "/images/assisted-living-2.jpg",
     title: "Recreational",
     subtitle: "Programs",
     description:
@@ -30,6 +33,7 @@ export const projects = [
     link: "/services#recreational",
   },
   {
+    image: "/images/assisted-living-7.jpg",
     title: "24-Hour Staff",
     subtitle: "Availability",
     description:

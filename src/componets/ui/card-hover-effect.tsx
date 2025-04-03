@@ -11,6 +11,7 @@ export const HoverEffect = ({
   className,
 }: {
   items: {
+    image: string;
     title: string;
     subtitle: string;
     description: string;
@@ -61,7 +62,7 @@ export const HoverEffect = ({
                       <Image
                           alt="Card background"
                           className="object-cover rounded-xl"
-                          src="/images/assisted-living-2.jpg"
+                          src={item.image}
                           width={270}
                       />
                   </CardHeader>

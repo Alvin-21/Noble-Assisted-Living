@@ -7,6 +7,7 @@ import { InfiniteMovingCard } from "@/componets/ui/InfiniteMovingCard";
 import Image from "next/image";
 import pic from '@/../public/images/assisted-living-1.jpg';
 import pic2 from '@/../public/images/assisted-living-4.jpg';
+import { ImagesSliderDemo } from "@/componets/ui/ImageSlider";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
             Find Out More <ArrowRightIcon className="w-5 md:w-6" />
           </Button>
         </section>
-        <Image className="rounded-l-xl h-[91vh]" src={pic} alt="hello" />
+        <ImagesSliderDemo />
       </div>
       <section className="bg-corn">
         <CardHoverEffect />
