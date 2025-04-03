@@ -1,12 +1,8 @@
-import Nav from "@/componets/ui/Navbar";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { CardHoverEffect } from "@/componets/ui/CardHoverEffect";
 import { InfiniteMovingCard } from "@/componets/ui/InfiniteMovingCard";
-import Image from "next/image";
-import pic from '@/../public/images/assisted-living-1.jpg';
-import pic2 from '@/../public/images/assisted-living-4.jpg';
 import { ImagesSlider } from "@/componets/ui/ImageSlider";
 
 export default function Home() {
