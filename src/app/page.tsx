@@ -10,6 +10,18 @@ import pic2 from '@/../public/images/assisted-living-4.jpg';
 import { ImagesSliderDemo } from "@/componets/ui/ImageSlider";
 
 export default function Home() {
+  const images = [
+    "/images/assisted-living-1.jpg",
+    "/images/assisted-living-11.jpg",
+    "/images/assisted-living-9.jpg",
+  ];
+
+  const imagesWelcome = [
+    "/images/assisted-living-4.jpg",
+    "/images/assisted-living-15.jpg",
+    "/images/assisted-living-14.jpg",
+  ];
+
   return (
     <>
       <div className="grid grid-cols-2 gap-0 bg-cerulean h-[91vh]">
@@ -29,13 +41,13 @@ export default function Home() {
             Find Out More <ArrowRightIcon className="w-5 md:w-6" />
           </Button>
         </section>
-        <ImagesSliderDemo />
+        <ImagesSliderDemo images={images} className="rounded-l-xl" />
       </div>
       <section className="bg-corn">
         <CardHoverEffect />
       </section>
       <section className="grid grid-cols-2 gap-0 h-[80vh] bg-cerulean">
-        <Image className="rounded-r-xl h-[80vh]" src={pic2} alt="hello" />
+        <ImagesSliderDemo images={imagesWelcome} className="rounded-r-xl" />
         <article className="pl-8 pt-3 bg-cerulean">
           <small className="text-base text-white">Welcome to</small>
           <br />

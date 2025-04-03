@@ -3,14 +3,9 @@ import { motion } from "motion/react";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
 
-export function ImagesSliderDemo() {
-  const images = [
-    "/images/assisted-living-13.jpg",
-    "/images/assisted-living-10.jpg",
-    "/images/assisted-living-11.jpg",
-  ];
+export function ImagesSliderDemo({ images, className }: { images: string[], className?: string }) {
   return (
-    <ImagesSlider className="rounded-l-xl" images={images}>
+    <ImagesSlider className={className} images={images}>
       <motion.div
         initial={{
           opacity: 0,
