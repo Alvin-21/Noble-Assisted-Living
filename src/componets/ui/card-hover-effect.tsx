@@ -1,10 +1,10 @@
 'use client';
 
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useInView } from "motion/react";
 import Link from "next/link";
-import { useState } from "react";
-import {Card, CardHeader, CardBody, Image} from "@heroui/react";
+import { useState, useRef } from "react";
+import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 
 export const HoverEffect = ({
   items,
@@ -20,6 +20,9 @@ export const HoverEffect = ({
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
   return (
     <div
@@ -57,21 +60,44 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Cardv> */}
-              <Card className="py-4 h-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue">
-                  <CardHeader className="overflow-visible py-2">
-                      <Image
-                          alt="Card background"
-                          className="object-cover rounded-xl"
-                          src={item.image}
-                          width={270}
-                      />
-                  </CardHeader>
-                  <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
-                      <h4 className="font-bold text-large text-java tracking-wide">{item.title}</h4>
-                      <small className="text-corn text-base tracking-wide">{item.subtitle}</small>
-                      <p className="text-white tracking-wide leading-relaxed">{item.description}</p>
-                  </CardBody>
-              </Card>
+
+          <motion.div
+            className="h-full"
+            initial={{ scale: 0 }}
+            animate={
+              isInView
+                ? {
+                  scale: 1,
+                  transition: { duration: 1, delay: 0.2 },
+                }
+                : {}
+            }
+          >
+            <Card
+              ref={ref}
+              className="py-4 h-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue"
+            >
+              <CardHeader className="overflow-visible py-2">
+                <Image
+                  alt="Card background"
+                  className="object-cover rounded-xl"
+                  src={item.image}
+                  width={270}
+                />
+              </CardHeader>
+              <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
+                <h4 className="font-bold text-large text-java tracking-wide">
+                  {item.title}
+                </h4>
+                <small className="text-corn text-base tracking-wide">
+                  {item.subtitle}
+                </small>
+                <p className="text-white tracking-wide leading-relaxed">
+                  {item.description}
+                </p>
+              </CardBody>
+            </Card>
+          </motion.div>
         </Link>
       ))}
     </div>
