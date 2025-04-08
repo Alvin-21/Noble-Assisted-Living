@@ -31,7 +31,7 @@ export default function Nav() {
                 key={link.name}
                 href={link.href}
                 className={clsx(
-                  "text-black",
+                  "text-black hover:text-dark-blue",
                   {
                     'text-dark-blue border-b-dark-blue pb-0.5 border-b-2': pathname === link.href,
                   },
