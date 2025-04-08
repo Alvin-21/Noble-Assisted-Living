@@ -83,6 +83,7 @@ export const HoverEffect = ({
                   className="object-cover rounded-xl"
                   src={item.image}
                   width={270}
+                  height={180}
                 />
               </CardHeader>
               <CardBody className="pb-0 pt-2 px-4 flex-col items-start">
