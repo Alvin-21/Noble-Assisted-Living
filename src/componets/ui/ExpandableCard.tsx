@@ -205,26 +205,26 @@ export const CloseIcon = () => {
 const cards = [
   {
     description: "Noble Assisted Living",
-    title: "Our Mission",
+    title: "Compassion",
     src: "/images/assisted-living-10.jpg",
     ctaText: "View",
     content: () => {
       return (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur. Aenean lobortis erat ac lectus viverra, vitae accumsan erat pharetra. Morbi dictum sollicitudin enim, eu porttitor neque efficitur in. Nullam molestie, sem vel pharetra ullamcorper, tortor est bibendum lacus, sit amet convallis diam sapien at risus. Nam a dictum ex, sit amet placerat risus. Duis ac metus vel libero consequat posuere eget at est. Vestibulum iaculis facilisis pretium. In hac habitasse platea dictumst. Nulla et dignissim felis.
+          This helps us to care for others with love and passion and having ability to know when things are right or wrong and how to respond to them.
         </p>
       );
     },
   },
   {
     description: "Noble Assisted Living",
-    title: "Our Values",
+    title: "Integrity",
     src: "/images/assisted-living-5.jpg",
     ctaText: "View",
     content: () => {
       return (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur. Aenean lobortis erat ac lectus viverra, vitae accumsan erat pharetra. Morbi dictum sollicitudin enim, eu porttitor neque efficitur in. Nullam molestie, sem vel pharetra ullamcorper, tortor est bibendum lacus, sit amet convallis diam sapien at risus. Nam a dictum ex, sit amet placerat risus. Duis ac metus vel libero consequat posuere eget at est. Vestibulum iaculis facilisis pretium. In hac habitasse platea dictumst. Nulla et dignissim felis.
+          At Noble we advocate doing the right things always even when nobody is watching this ensure that with no double all our residents are cared for 24/7.
         </p>
       );
     },
@@ -232,13 +232,13 @@ const cards = [
 
   {
     description: "Noble Assisted Living",
-    title: "Our Goals",
+    title: "Dignity",
     src: "/images/assisted-living-3.jpg",
     ctaText: "View",
     content: () => {
       return (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur. Aenean lobortis erat ac lectus viverra, vitae accumsan erat pharetra. Morbi dictum sollicitudin enim, eu porttitor neque efficitur in. Nullam molestie, sem vel pharetra ullamcorper, tortor est bibendum lacus, sit amet convallis diam sapien at risus. Nam a dictum ex, sit amet placerat risus. Duis ac metus vel libero consequat posuere eget at est. Vestibulum iaculis facilisis pretium. In hac habitasse platea dictumst. Nulla et dignissim felis.
+          Dignity is a very great value to coexist and should’ve be always practice at all times. At Noble we ensure all our residents are well treated physically, mentally and emotionally which 100% helps increase quality of life.
         </p>
       );
     },

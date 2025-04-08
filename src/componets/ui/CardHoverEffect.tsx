@@ -13,7 +13,7 @@ export const projects = [
     title: "Activities",
     subtitle: "Of Daily Living",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.Aenean lobortis erat ac lectus viverra.",
+      "We thrive in making each day easy, fun and successful for all our families. At, Noble we understand as we age even the simplest daily activities, routines can be challenging to be done or complicated.",
     link: "/services#activity",
   },
   {
@@ -21,7 +21,7 @@ export const projects = [
     title: "Nursing",
     subtitle: "Services",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.",
+      "At Noble, our nurses are dedicated to go above and beyond to make sure residents get the medical care they need to improve their overall well being as well as quality of life.",
     link: "/services#nursing",
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     title: "Recreational",
     subtitle: "Programs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. ",
+      "Fun doesn’t stop as we age it just gets more fun and interesting. At noble we thrive in making sure our residents don’t get bored  and are able to engage in fun activities that are harmless to them and that meet their needs in terms of strength and life enjoyment.  ",
     link: "/services#recreational",
   },
   {
@@ -37,7 +37,7 @@ export const projects = [
     title: "24-Hour Staff",
     subtitle: "Availability",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur, vitae accumsan erat pharetra.",
+      "At noble home care, your comfort and well being is  our top priority. Our dedicated team is always available 24/7 to meet your loved ones’ needs as needed.",
     link: "/services#availability",
   }
 ];

@@ -27,7 +27,7 @@ export default function Home() {
             <h1 className="text-5xl pb-2 text-java">Life With Our</h1>
             <h1 className="text-5xl text-corn">Quality Care</h1>
           </header>
-          <p className="pt-4 mb-7 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sit amet risus at fringilla. Cras id ante mollis, faucibus neque id, varius risus. Suspendisse convallis commodo vehicula.</p>
+          <p className="pt-4 mb-7 text-white">At Noble we believe life should still be fun, filled with laughters, live for our elderly community. Noble community is dedicated to make all your beloved families feel at home far from home</p>
           <Button
             as={Link}
             href="/about-us"
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="mt-3"></div>
           <h1 className="text-5xl py-3 inline text-java">Noble Assisted </h1>
           <h1 className="text-5xl py-3 inline text-corn">Living</h1>
-          <p className="text-lg text-white tracking-wide mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sit amet risus at fringilla. Cras id ante mollis, faucibus neque id, varius risus. Suspendisse convallis commodo vehicula. Quisque sapien massa, facilisis nec auctor et, pharetra non arcu. Phasellus efficitur facilisis eros ut lacinia. Cras a porttitor ipsum. Sed semper nibh vel gravida eleifend. Phasellus finibus posuere ipsum vel euismod. Cras iaculis nec nisi in condimentum. Mauris faucibus justo sapien, et vulputate massa varius non. Nulla id suscipit orci, et efficitur tortor.</p>
+          <p className="text-lg text-white tracking-wide mt-8">Noble is a compassionate and dedicated community where the joy of life continues to flourish for our elderly loved ones. At Noble, we believe that aging should not take away the laughter, love, or sense of purpose in life. We create a warm, welcoming environment that feels like home, even when miles away from family. Our team thrives on compassion, integrity, and dignity—ensuring that every resident receives the emotional and physical support they need, all while being treated with the utmost respect. With 24/7 care, residents and their families can rest easy knowing help, companionship, and safety are always within reach.</p>
         </article>
       </section>
       <InfiniteMovingCard />
