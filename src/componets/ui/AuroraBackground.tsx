@@ -20,9 +20,6 @@ export function AuroraBackgroundDemo() {
                 <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
                     Come, get to know us better.
                 </div>
-                <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-                    Lorem ipsum dolor sit amet
-                </div>
             </motion.div>
         </AuroraBackground>
     );
