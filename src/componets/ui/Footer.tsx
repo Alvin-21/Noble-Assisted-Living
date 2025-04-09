@@ -18,11 +18,14 @@ export default function Footer() {
                 </div>
                 <div className="pt-7 text-black">
                     <span className="text-lg"><MapPinIcon className="w-8 inline mr-2" />Find us at:</span>
-                    <ul className="list-none ml-12 pt-1 tracking-wide leading-relaxed text-lg">
-                        <li>14168 Palm St NW</li>
-                        <li className="pt-2">Andover, MN  55304</li>
-                        <li className="pt-2">United States</li>
-                    </ul>
+                    <Link href="https://www.google.com/maps/place/14168+Palm+St+NW,+Andover,+MN+55304,+USA" passHref={true} target="_blank">
+                        <ul className="list-none ml-12 pt-1 tracking-wide leading-relaxed text-lg hover:text-primary hover:cursor-pointer">
+                            <li>14168 Palm St NW</li>
+                            <li className="pt-2">Andover, MN  55304</li>
+                            <li className="pt-2">United States</li>
+                        </ul>
+                    </Link>
+                   
                 </div>
             </address>
             <aside className="flex gap-28 pt-9">
