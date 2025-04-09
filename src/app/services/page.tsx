@@ -39,7 +39,7 @@ export default function Page() {
                     <h3 className="text-3xl inline text-cerulean font-semibold">Activities of </h3>
                     <h3 className="text-3xl inline text-corn font-semibold">Daily Living</h3>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">Our well trained stuff are here ready to help all our residents get all the help, encouragement and motivation they need to perform each individual’s daily tasks.</p>
-                    <p id="nursing" className="pt-4 tracking-wide leading-relaxed text-lg">Here are some of daily routines we provide help with to our residents:</p>
+                    <p className="pt-4 tracking-wide leading-relaxed text-lg">Here are some of daily routines we provide help with to our residents:</p>
                     <ul className="list-disc pl-8 pt-4 tracking-wide leading-relaxed text-lg">
                         <li>Bathing</li>
                         <li>Glooming</li>
@@ -48,7 +48,7 @@ export default function Page() {
                         <li>Meal prep</li>
                         <li>Feeding</li>
                         <li>Ambulating</li>
-                        <li>Transfers and mobility</li>
+                        <li id="nursing">Transfers and mobility</li>
                     </ul>
                 </div>
             </div>
@@ -57,13 +57,13 @@ export default function Page() {
                     <h3 className="text-3xl font-semibold text-corn inline">Nursing</h3>
                     <h3 className="text-3xl font-semibold text-cerulean inline"> Services</h3>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">We not only provide medical care but also show compassion, love, empathy, willingness and trust to our esteemed residents and families.</p>
-                    <p id="recreational" className="pt-4 tracking-wide leading-relaxed text-lg">Some of the services offered by our nurses to meet this goal but not limited to include:</p>
+                    <p className="pt-4 tracking-wide leading-relaxed text-lg">Some of the services offered by our nurses to meet this goal but not limited to include:</p>
                     <ul className="list-disc pl-8 pt-4 tracking-wide leading-relaxed text-lg">
                         <li>Dispensing medication</li>
                         <li className="pt-2">Wound care</li>
                         <li className="pt-2">Medical management and maintenance</li>
                         <li className="pt-2">Diabetic cares and routines</li>
-                        <li className="pt-2">Making appointments</li>
+                        <li id="recreational" className="pt-2">Making appointments</li>
                     </ul>
                 </div>
                 <Image className="h-[70vh] rounded-l-xl" src={pic3} alt="A nurse wearing a stethoscope" />
@@ -71,10 +71,10 @@ export default function Page() {
             <div className="grid grid-cols-2 gap-0 h-[80vh] pt-7">
                 <Image className="h-[70vh] rounded-r-xl" src={pic4} alt="Two elderly people sitting on a couch reading a newspaper" />
                 <div className="pl-8 pt-7 pr-3">
-                    <h3 id="recreational" className="text-3xl inline font-semibold text-cerulean">Recreational</h3>
+                    <h3 className="text-3xl inline font-semibold text-cerulean">Recreational</h3>
                     <h3 className="text-3xl inline font-semibold text-corn"> Programs</h3>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">We focus on helping our residents find purpose in life through programs that are well calculated to fit into their personal schedules and wants.</p>
-                    <p id="availability" className="pt-4 tracking-wide leading-relaxed text-lg">These programs can be indoor like:</p>
+                    <p className="pt-4 tracking-wide leading-relaxed text-lg">These programs can be indoor like:</p>
                     <ul className="list-disc pl-8 pt-2 tracking-wide leading-relaxed text-lg">
                         <li>Bingos</li>
                         <li className="pt-0">Coloring</li>
@@ -86,13 +86,13 @@ export default function Page() {
                         <li>Bingos</li>
                         <li className="pt-0">Taking walks</li>
                         <li className="pt-0">Outings</li>
-                        <li className="pt-0">E.t.c</li>
+                        <li id="availability" className="pt-0">E.t.c</li>
                     </ul>
                 </div>
             </div>
             <div className="grid grid-cols-2 gap-0 h-[80vh] pt-7">
             <div className="pl-8 pt-7">
-                    <h3 id="availability" className="text-3xl inline font-semibold text-corn">24-Hour</h3>
+                    <h3 className="text-3xl inline font-semibold text-corn">24-Hour</h3>
                     <h3 className="text-3xl inline font-semibold text-cerulean"> Staff Availability</h3>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">With staff always on the clock, you’re rest assured that your family which we at Noble consider ours too, are receiving the assistance, companionship, support and security needed. Above all at Noble we are all family and will always try our best to make everyone feel to be part of it.</p>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">What truly sets Noble apart is the sense of belonging we create within our community. We believe that everyone deserves to feel seen, heard, and valued, especially in their later years. That’s why we go beyond just care—we build real relationships and strive to make every resident feel like they’re part of something special. At Noble, we’re not just a care facility—we’re a family, and we’re committed to making sure no one ever feels alone.</p>
