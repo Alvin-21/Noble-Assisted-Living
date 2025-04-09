@@ -1,6 +1,7 @@
 'use client';
 
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
+import React from 'react';
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/react";
 import Link from "next/link";
 import Image from 'next/image';
 import logo from '@/../public/images/Logo.png';
@@ -16,16 +17,21 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <Navbar className="bg-gradient-to-r from-charcoal-gray to-corn">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gradient-to-r from-charcoal-gray to-corn">
       <NavbarBrand>
         <Image src={logo} alt="Noble Assisted Living logo" width="50" height='50' />
         <span className="font-bold text-2xl pl-3 text-java">Noble Assisted</span>
         <span className="font-bold text-2xl pl-1 text-corn">Living</span>
       </NavbarBrand>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden sm:flex gap-10">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="md:hidden"
+        />
+        <NavbarItem className="hidden md:flex gap-10">
           {links.map((link) => {
             return (
               <Link
@@ -44,6 +50,23 @@ export default function Nav() {
           })}
         </NavbarItem>
       </NavbarContent>
+      <NavbarMenu>
+        {links.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`} className='text-end pt-3'>
+            <Link
+              className={clsx(
+                "text-black hover:text-dark-blue",
+                {
+                  'text-dark-blue border-b-dark-blue pb-0.5 border-b-2': pathname === item.href,
+                },
+              )}
+              href={item.href}
+            >
+              {item.name}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }
