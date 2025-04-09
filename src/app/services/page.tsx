@@ -1,10 +1,10 @@
 import Image from "next/image";
-import pic from '@/../public/images/assisted-living-12.jpg';
+import pic from '@/../public/images/assisted-living-12.webp';
 import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
-import pic2 from '@/../public/images/assisted-living-13.jpg';
-import pic3 from '@/../public/images/assisted-living-8.jpg';
-import pic4 from '@/../public/images/assisted-living-2.jpg';
-import pic5 from '@/../public/images/assisted-living-7.jpg';
+import pic2 from '@/../public/images/assisted-living-13.webp';
+import pic3 from '@/../public/images/assisted-living-8.webp';
+import pic4 from '@/../public/images/assisted-living-2.webp';
+import pic5 from '@/../public/images/assisted-living-7.webp';
 import { Metadata } from 'next';
 import ServicesArrowDown from "@/componets/ui/ServicesArrowDown";
  

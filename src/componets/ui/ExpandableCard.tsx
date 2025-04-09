@@ -206,7 +206,7 @@ const cards = [
   {
     description: "Noble Assisted Living",
     title: "Compassion",
-    src: "/images/assisted-living-10.jpg",
+    src: "/images/assisted-living-10.webp",
     ctaText: "View",
     content: () => {
       return (
@@ -219,7 +219,7 @@ const cards = [
   {
     description: "Noble Assisted Living",
     title: "Integrity",
-    src: "/images/assisted-living-5.jpg",
+    src: "/images/assisted-living-5.webp",
     ctaText: "View",
     content: () => {
       return (
@@ -233,7 +233,7 @@ const cards = [
   {
     description: "Noble Assisted Living",
     title: "Dignity",
-    src: "/images/assisted-living-3.jpg",
+    src: "/images/assisted-living-3.webp",
     ctaText: "View",
     content: () => {
       return (
