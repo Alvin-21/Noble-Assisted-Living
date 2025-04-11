@@ -19,7 +19,7 @@ export default function Page() {
             <div className="h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
                 <ServicesArrowDown />
             </div>
-            <div className="h-[10vh] w-full mt-8 container px-8">
+            <div className="h-[10vh] w-full mt-8 px-8">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
                 <div className="pt-3"></div>
