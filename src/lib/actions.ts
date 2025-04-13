@@ -35,7 +35,7 @@ export async function sendEmail(prevState: State | undefined, formData: FormData
         };
     }
 
-    const { fullName, email, message } = validatedFields.data;
+    const { fullName, email } = validatedFields.data;
 
     try {
         const resend = new Resend(process.env.RESEND_API_KEY);
