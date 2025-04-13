@@ -43,7 +43,7 @@ export default function Home() {
       </section>
       <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 h-full bg-cerulean">
         <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl h-full w-full" direction="right" />
-        <article className="pl-8 py-3 bg-cerulean h-[35rem] phone:h-[46rem] phone3:h-[41rem]">
+        <article className="px-8 py-3 bg-cerulean lg:h-[35rem] md:h-[43rem] phone:h-[46rem] phone3:h-[41rem]">
           <small className="text-base text-white">Welcome to</small>
           <br />
           <div className="mt-3"></div>
