@@ -204,7 +204,7 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Noble Assisted Living",
+    description: "Noble Homes Assisted Living",
     title: "Compassion",
     src: "/images/assisted-living-10.webp",
     ctaText: "View",
@@ -217,7 +217,7 @@ const cards = [
     },
   },
   {
-    description: "Noble Assisted Living",
+    description: "Noble Homes Assisted Living",
     title: "Integrity",
     src: "/images/assisted-living-5.webp",
     ctaText: "View",
@@ -231,7 +231,7 @@ const cards = [
   },
 
   {
-    description: "Noble Assisted Living",
+    description: "Noble Homes Assisted Living",
     title: "Dignity",
     src: "/images/assisted-living-3.webp",
     ctaText: "View",

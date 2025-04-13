@@ -47,8 +47,10 @@ export default function Home() {
           <small className="text-base text-white">Welcome to</small>
           <br />
           <div className="mt-3"></div>
-          <h1 className="text-5xl py-3 inline text-java">Noble Assisted </h1>
-          <h1 className="text-5xl py-3 inline text-corn">Living</h1>
+          <div className="flex flex-col">
+            <h1 className="text-5xl py-3 inline text-java">Noble Homes </h1>
+            <h1 className="text-5xl py-3 inline text-corn">Assisted Living</h1>
+          </div>
           <p className="text-lg text-white tracking-wide mt-8 pr-5 md:pr-0">Noble is a compassionate and dedicated community where the joy of life continues to flourish for our elderly loved ones. At Noble, we believe that aging should not take away the laughter, love, or sense of purpose in life. We create a warm, welcoming environment that feels like home, even when miles away from family. Our team thrives on compassion, integrity, and dignity—ensuring that every resident receives the emotional and physical support they need, all while being treated with the utmost respect. With 24/7 care, residents and their families can rest easy knowing help, companionship, and safety are always within reach.</p>
         </article>
       </section>

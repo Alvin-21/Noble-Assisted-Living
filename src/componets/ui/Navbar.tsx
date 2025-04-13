@@ -22,9 +22,12 @@ export default function Nav() {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gradient-to-r from-charcoal-gray to-corn">
       <NavbarBrand>
-        <Image src={logo} alt="Noble Assisted Living logo" width="50" height='50' />
-        <span className="font-bold phone:text-lg sm:text-2xl pl-3 text-java">Noble Assisted</span>
-        <span className="font-bold phone:text-lg sm:text-2xl pl-1 text-corn">Living</span>
+        <Image src={logo} alt="Noble Homes Assisted Living logo" width="50" height='50' />
+        <div className='flex flex-col sm:flex-row sm:gap-0 justify-start'>
+          <span className="font-bold phone:text-lg sm:text-2xl pl-3 text-java">Noble Homes</span>
+          <span className="font-bold phone:text-lg sm:text-2xl pl-3 text-corn">Assisted Living</span>
+        </div>
+       
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarMenuToggle

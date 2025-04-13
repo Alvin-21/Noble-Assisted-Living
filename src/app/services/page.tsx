@@ -28,7 +28,7 @@ export default function Page() {
             <div className="container px-8">
                 <h1 className="inline text-5xl font-semibold">Our </h1>
                 <h1 className="inline text-cerulean text-5xl font-semibold">Services</h1>
-                <p className="pt-4 tracking-wide leading-relaxed text-lg">At Noble Assisted Living, we offer a wide range of personalized services designed to support the comfort, health, and happiness of our residents. From daily living assistance to professional nursing care, our compassionate and well-trained staff is here to help every step of the way. We also prioritize social well-being through engaging programs, our team is always ready to provide the care, companionship, and security your loved ones deserve—because at Noble, we care like family.</p>
+                <p className="pt-4 tracking-wide leading-relaxed text-lg">At Noble Homes Assisted Living, we offer a wide range of personalized services designed to support the comfort, health, and happiness of our residents. From daily living assistance to professional nursing care, our compassionate and well-trained staff is here to help every step of the way. We also prioritize social well-being through engaging programs, our team is always ready to provide the care, companionship, and security your loved ones deserve—because at Noble, we care like family.</p>
             </div>
             <div className="container pt-7 px-8">
                 <h2 id="activity" className="text-4xl font-semibold">What we offer:</h2>

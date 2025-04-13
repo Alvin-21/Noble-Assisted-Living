@@ -23,7 +23,7 @@ export default function Page() {
                 <h1 className="inline text-5xl font-semibold">Who </h1>
                 <h1 className="inline text-cerulean text-5xl font-semibold">We</h1>
                 <h1 className="inline text-5xl font-semibold"> Are <HeartIcon className="w-10 inline pb-1 text-corn" /></h1>
-                <p className="pt-3 tracking-wide leading-relaxed">At Noble Assisted Living, our foundation is built on the core values of Compassion, Integrity, and Dignity (CID). These values guide our mission to provide a nurturing environment where our residents not only feel safe and supported but also valued and empowered to live with purpose and joy.</p>
+                <p className="pt-3 tracking-wide leading-relaxed">At Noble Homes Assisted Living, our foundation is built on the core values of Compassion, Integrity, and Dignity (CID). These values guide our mission to provide a nurturing environment where our residents not only feel safe and supported but also valued and empowered to live with purpose and joy.</p>
             </div>
             <ExpandableCard />
             <div className="flex justify-center gap-4 pb-10">
