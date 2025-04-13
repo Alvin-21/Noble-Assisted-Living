@@ -8,13 +8,13 @@ export default function Footer() {
                 <h2 className="text-2xl text-dark-blue">Get in Touch With Us Today!</h2>
                 <div className="pt-3 text-lg text-black">
                     <p className=""><EnvelopeIcon className="w-8 inline mr-2" />You can send us an
-                        <a href="mailto:nobleassistedliving@gmail.com" className="text-dark-blue hover:underline"> email</a>
+                        <a href="mailto:noblehomes2@yahoo.com" className="text-dark-blue hover:underline"> email</a>
                     </p>
                     <div className="flex justify-center w-52 py-3">
                         <small className="">OR</small>
                     </div>
                     <span><PhoneIcon className="w-8 inline mr-2" />Call / Text us on</span>
-                    <a href="tel:+254-712-345-678" className="text-dark-blue hover:underline"> 0712345678</a>
+                    <a href="tel:+1-612-481-8091" className="text-dark-blue hover:underline"> +1 (612) 481-8091</a>
                 </div>
                 <div className="pt-7 text-black w-fit md:w-full">
                     <span className="text-lg"><MapPinIcon className="w-8 inline mr-2" />Find us at:</span>
