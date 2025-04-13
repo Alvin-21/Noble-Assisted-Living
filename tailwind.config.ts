@@ -39,6 +39,12 @@ const config: Config = {
         'light-corn': '#FBCC13',
         'dark-corn': '#D4AA04',
       },
+      screens: {
+        'phone': '360px',
+        'phone1': '375px',
+        'phone2': '390px',
+        'phone3': '412px',
+      },
     },
   },
   darkMode: "class",
