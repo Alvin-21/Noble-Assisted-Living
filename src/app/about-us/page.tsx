@@ -27,8 +27,8 @@ export default function Page() {
             </div>
             <ExpandableCard />
             <div className="flex justify-center gap-4 pb-10">
-                <h1 className="inline text-5xl font-semibold">Our </h1>
-                <h1 className="inline text-cerulean text-5xl font-semibold">Community</h1>
+                <h1 className="inline sm:text-5xl phone:text-4xl font-semibold">Our </h1>
+                <h1 className="inline text-cerulean sm:text-5xl phone:text-4xl font-semibold">Community</h1>
             </div>
             <ParallaxScrollDemo />
         </>
