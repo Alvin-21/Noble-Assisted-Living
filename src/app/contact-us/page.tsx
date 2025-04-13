@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <div className="h-[10vh] mt-8 container mx-auto">
+            <div className="h-[10vh] w-full mt-8 px-8 md:mx-auto">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Contact Us</h4>
                 <div className="pt-3"></div>
                 <hr className="border-b-2 border-b-java border-dashed" />
             </div>
             <div className="pb-7 min-h-[95vh]">
-                <div className="flex flex-col text-java text-center bg-dark-blue max-w-3xl mx-auto px-7 pt-7 rounded-t-xl">
+                <div className="flex flex-col text-java text-center bg-dark-blue max-w-3xl mx-8 md:mx-auto px-7 pt-7 rounded-t-xl">
                     <small className="text-xl text-corn">Reach out to us.</small>
                     <h1 className="text-4xl">We are happy to hear from you! <FaceSmileIcon className="w-9 inline text-corn pb-1" /></h1>
                 </div>

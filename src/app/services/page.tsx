@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <Image className="h-[83vh]" src={pic} alt="A person helping an elderly with their groceries." />
-            <div className="h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
+            <Image className="min-h-[60vh] md:h-[83vh]" src={pic} alt="A person helping an elderly with their groceries." />
+            <div className="min-h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
                 <ServicesArrowDown />
             </div>
-            <div className="h-[10vh] w-full mt-8 container px-8">
+            <div className="min-h-[10vh] w-full mt-8 px-8 pb-2">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
                 <div className="pt-3"></div>
@@ -28,14 +28,14 @@ export default function Page() {
             <div className="container px-8">
                 <h1 className="inline text-5xl font-semibold">Our </h1>
                 <h1 className="inline text-cerulean text-5xl font-semibold">Services</h1>
-                <p className="pt-4 tracking-wide leading-relaxed text-lg">At Noble Assisted Living, we offer a wide range of personalized services designed to support the comfort, health, and happiness of our residents. From daily living assistance to professional nursing care, our compassionate and well-trained staff is here to help every step of the way. We also prioritize social well-being through engaging programs, our team is always ready to provide the care, companionship, and security your loved ones deserve—because at Noble, we care like family.</p>
+                <p className="pt-4 tracking-wide leading-relaxed text-lg">At Noble Homes Assisted Living, we offer a wide range of personalized services designed to support the comfort, health, and happiness of our residents. From daily living assistance to professional nursing care, our compassionate and well-trained staff is here to help every step of the way. We also prioritize social well-being through engaging programs, our team is always ready to provide the care, companionship, and security your loved ones deserve—because at Noble, we care like family.</p>
             </div>
             <div className="container pt-7 px-8">
                 <h2 id="activity" className="text-4xl font-semibold">What we offer:</h2>
             </div>
-            <div className="grid grid-row-2 gap-0 h-full pt-5 justify-items-center">
-                <div className="px-8">
-                    <Image className="h-[50vh] w-[85vh] rounded-xl" src={pic2} alt="Two elderly people doing a yoga activity." />
+            <div className="grid grid-row-2 md:grid-cols-2 md:h-[80vh] gap-0 h-full pt-5 justify-items-center md:justify-items-start">
+                <div className="px-8 md:px-0">
+                    <Image className="h-[50vh] w-[85vh] rounded-xl md:h-[70vh] md:w-full md:rounded-l-none" src={pic2} alt="Two elderly people doing a yoga activity." />
                 </div>
                 <div className="px-8 pt-5 pr-3">
                     <h3 className="text-3xl inline text-cerulean font-semibold">Activities of </h3>
@@ -54,7 +54,7 @@ export default function Page() {
                     </ul>
                 </div>
             </div>
-            <div className="grid grid-row-2 gap-0 h-full pt-5 justify-items-center">
+            <div className="grid grid-row-2 md:grid-cols-2 md:h-[80vh] gap-0 h-full pt-5 justify-items-center md:justify-items-start">
                 <div className="px-8 pt-5 order-last">
                     <h3 className="text-3xl font-semibold text-corn inline">Nursing</h3>
                     <h3 className="text-3xl font-semibold text-cerulean inline"> Services</h3>
@@ -68,13 +68,13 @@ export default function Page() {
                         <li id="recreational" className="pt-2">Making appointments</li>
                     </ul>
                 </div>
-                <div className="px-8 pt-5">
-                    <Image className="h-[50vh] w-[85vh] rounded-xl" src={pic3} alt="A nurse wearing a stethoscope" />
+                <div className="px-8 pt-5 md:order-last md:pr-0">
+                    <Image className="h-[50vh] w-[85vh] rounded-xl md:h-[70vh] md:w-full md:rounded-r-none" src={pic3} alt="A nurse wearing a stethoscope" />
                 </div>
             </div>
-            <div className="grid grid-row-2 gap-0 h-full pt-5 justify-items-center">
-                <div className="px-8 pt-5">
-                    <Image className="h-[50vh] w-[85vh] rounded-xl" src={pic4} alt="Two elderly people sitting on a couch reading a newspaper" />
+            <div className="grid grid-row-2 md:grid-cols-2 md:h-[80vh] gap-0 h-full pt-5 justify-items-center md:justify-items-start">
+                <div className="px-8 pt-5 md:pl-0">
+                    <Image className="h-[50vh] w-[85vh] rounded-xl md:h-[70vh] md:w-full md:rounded-l-none" src={pic4} alt="Two elderly people sitting on a couch reading a newspaper" />
                 </div>
                 <div className="px-8 pt-7 pr-3">
                     <h3 className="text-3xl inline font-semibold text-cerulean">Recreational</h3>
@@ -96,15 +96,15 @@ export default function Page() {
                     </ul>
                 </div>
             </div>
-            <div className="grid grid-row-2 gap-0 h-full py-7 justify-items-center">
+            <div className="grid grid-row-2 md:grid-cols-2 gap-0 h-full py-5 justify-items-center md:justify-items-start">
                 <div className="px-8 pt-7 order-last">
                     <h3 className="text-3xl inline font-semibold text-corn">24-Hour</h3>
                     <h3 className="text-3xl inline font-semibold text-cerulean"> Staff Availability</h3>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">With staff always on the clock, you’re rest assured that your family which we at Noble consider ours too, are receiving the assistance, companionship, support and security needed. Above all at Noble we are all family and will always try our best to make everyone feel to be part of it.</p>
                     <p className="pt-4 tracking-wide leading-relaxed text-lg">What truly sets Noble apart is the sense of belonging we create within our community. We believe that everyone deserves to feel seen, heard, and valued, especially in their later years. That’s why we go beyond just care—we build real relationships and strive to make every resident feel like they’re part of something special. At Noble, we’re not just a care facility—we’re a family, and we’re committed to making sure no one ever feels alone.</p>
                 </div>
-                <div className="px-8 pt-5">
-                    <Image className="h-[50vh] w-[85vh] rounded-xl" src={pic5} alt="An elderly person in a wheelchair gazing at the horizon while someone is holding the back handles of the wheelchair." />
+                <div className="px-8 pt-5 md:pr-0 md:order-last">
+                    <Image className="h-[50vh] w-[85vh] rounded-xl md:h-full md:w-full md:rounded-r-none" src={pic5} alt="An elderly person in a wheelchair gazing at the horizon while someone is holding the back handles of the wheelchair." />
                 </div>
             </div>
         </>

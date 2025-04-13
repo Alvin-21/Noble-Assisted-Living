@@ -23,7 +23,7 @@ export default function Form() {
 
     return (
         <>
-            <form onSubmit={onSubmit} className="flex flex-col gap-8 max-w-3xl mx-auto bg-dark-blue p-7 rounded-b-xl">
+            <form onSubmit={onSubmit} className="flex flex-col gap-8 max-w-3xl mx-8 md:mx-auto bg-dark-blue p-7 rounded-b-xl">
                 <div>
                     <Input
                         id="fullName"

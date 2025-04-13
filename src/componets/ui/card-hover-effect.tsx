@@ -22,12 +22,19 @@ export const HoverEffect = ({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, {
+    once: false,
+    margin:
+      typeof window !== "undefined" &&
+      window.matchMedia("(max-width: 768px)").matches
+        ? "1600px"
+        : "0px",
+  });
 
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-10",
+        "grid grid-cols-1 md:grid-cols-2 h-full lg:grid-cols-4 py-10",
         className
       )}
     >
@@ -72,13 +79,13 @@ export const HoverEffect = ({
               ref={ref}
               className="py-4 h-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue"
             >
-              <CardHeader className="overflow-visible py-2">
+              <CardHeader className="overflow-visible py-2 flex justify-center">
                 <Image
                   alt="Card background"
-                  className="object-cover rounded-xl"
+                  className=" md:block object-cover rounded-xl"
                   src={item.image}
-                  width={270}
-                  height={180}
+                  width={400}
+                  height={250}
                   loading="eager"
                 />
               </CardHeader>
