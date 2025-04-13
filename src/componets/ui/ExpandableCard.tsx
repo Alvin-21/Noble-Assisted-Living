@@ -123,7 +123,7 @@ export function ExpandableCard() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full gap-4 h-[80vh] content-center">
+      <ul className="max-w-2xl mx-auto w-full gap-4 md:h-[80vh] h-full content-center">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -131,20 +131,20 @@ export function ExpandableCard() {
             onClick={() => setActive(card)}
             className="p-10 flex flex-col md:flex-row justify-between items-center hover:bg-[#e9fbfc] dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-col md:flex-row">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-40 w-40 md:h-20 md:w-20 rounded-lg object-cover object-top"
+                  className="h-40 w-40 md:h-20 md:w-20 rounded-lg object-cover object-top mx-auto"
                 />
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="text-4xl font-semibold text-neutral-800 dark:text-neutral-200 text-center md:text-left"
+                  className="text-4xl font-semibold text-neutral-800 dark:text-neutral-200 text-center md:text-left pb-3 md:pb-0"
                 >
                   {card.title}
                 </motion.h3>

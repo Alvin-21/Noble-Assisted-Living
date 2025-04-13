@@ -13,13 +13,13 @@ export default function Page() {
     return (
         <>
             <AuroraBackgroundDemo />
-            <div className="h-[10vh] mt-8 container mx-auto">
+            <div className="min-h-[10vh] w-full mt-8 px-8 pb-2">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
-                <h4 className="inline text-lg text-dark-corn font-semibold"> About Us</h4>
+                <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
                 <div className="pt-3"></div>
                 <hr className="border-b-2 border-b-java border-dashed" />
             </div>
-            <div className="container mx-auto">
+            <div className="container px-8">
                 <h1 className="inline text-5xl font-semibold">Who </h1>
                 <h1 className="inline text-cerulean text-5xl font-semibold">We</h1>
                 <h1 className="inline text-5xl font-semibold"> Are <HeartIcon className="w-10 inline pb-1 text-corn" /></h1>
