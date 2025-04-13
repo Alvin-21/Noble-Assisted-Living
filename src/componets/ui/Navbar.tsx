@@ -23,8 +23,8 @@ export default function Nav() {
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gradient-to-r from-charcoal-gray to-corn">
       <NavbarBrand>
         <Image src={logo} alt="Noble Assisted Living logo" width="50" height='50' />
-        <span className="font-bold text-2xl pl-3 text-java">Noble Assisted</span>
-        <span className="font-bold text-2xl pl-1 text-corn">Living</span>
+        <span className="font-bold phone:text-lg sm:text-2xl pl-3 text-java">Noble Assisted</span>
+        <span className="font-bold phone:text-lg sm:text-2xl pl-1 text-corn">Living</span>
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarMenuToggle
