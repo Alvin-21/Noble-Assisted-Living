@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col md:flex-row md:justify-between md:h-[60vh] md:px-14 bg-gradient-to-l from-java to-corn">
+        <footer className="flex flex-col md:flex-row md:justify-between md:h-[60vh] md:px-14 bg-gradient-to-l from-java to-corn phone:mt-[34rem] phone2:mt-[26rem] phone3:mt-[24rem] sm:mt-0">
             <address className="pl-8 pt-9 ">
                 <h2 className="text-2xl text-dark-blue">Get in Touch With Us Today!</h2>
                 <div className="pt-3 text-lg text-black">

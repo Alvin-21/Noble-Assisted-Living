@@ -41,15 +41,15 @@ export default function Home() {
       <section className="bg-corn sm:h-[1900px] lg:h-[44rem] phone:h-[2300px] phone1:h-[2250px] phone2:h-[2200px] phone3:h-[2150px] md:h-[73rem]">
         <CardHoverEffect />
       </section>
-      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 h-full bg-cerulean">
-        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl h-full w-full" direction="right" />
-        <article className="px-8 py-3 bg-cerulean lg:h-[35rem] md:h-[43rem] phone:h-[57rem] phone3:h-[47rem] phone2:h-[49rem]">
+      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:h-full phone:h-[90vh] bg-cerulean">
+        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl sm:h-full w-full phone:h-[40vh]" direction="right" />
+        <article className="px-8 py-3 bg-cerulean lg:h-[35rem] md:h-[43rem] phone:h-[57rem] phone3:h-[47rem] phone2:h-[49rem] border- border-black">
           <small className="text-base text-white">Welcome to</small>
           <br />
           <div className="mt-3"></div>
           <div className="flex flex-col">
-            <h1 className="text-5xl py-3 inline text-java">Noble Homes </h1>
-            <h1 className="text-5xl py-3 inline text-corn">Assisted Living</h1>
+            <h1 className="text-5xl pt-3 inline text-java">Noble Homes </h1>
+            <h1 className="text-5xl pb-3 inline text-corn">Assisted Living</h1>
           </div>
           <p className="text-lg text-white tracking-wide mt-8 pr-5 md:pr-0">Noble is a compassionate and dedicated community where the joy of life continues to flourish for our elderly loved ones. At Noble, we believe that aging should not take away the laughter, love, or sense of purpose in life. We create a warm, welcoming environment that feels like home, even when miles away from family. Our team thrives on compassion, integrity, and dignity—ensuring that every resident receives the emotional and physical support they need, all while being treated with the utmost respect. With 24/7 care, residents and their families can rest easy knowing help, companionship, and safety are always within reach.</p>
         </article>
