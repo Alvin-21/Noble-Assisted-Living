@@ -28,7 +28,7 @@ export const HoverEffect = ({
       typeof window !== "undefined" &&
       window.matchMedia("(max-width: 768px)").matches
         ? "1600px"
-        : "0px",
+        : "500px",
   });
 
   return (

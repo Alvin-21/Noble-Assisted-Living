@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col md:flex-row md:justify-between md:h-[60vh] md:px-14 bg-gradient-to-l from-java to-corn phone:mt-[34rem] phone2:mt-[26rem] phone3:mt-[24rem] sm:mt-0">
+        <footer className="flex flex-col md:flex-row md:justify-between md:h-full md:pb-4 md:px-14 bg-gradient-to-l from-java to-corn phone-xs:mt-[35rem] phone-xs-md:mt-[34rem] phone-sm-sm:mt-[32rem] phone-sm:mt-[31rem] phone-md:mt-[30rem] phone-lg:mt-[30rem] phone-lg-md:mt-[28rem] phone-xl:mt-[28rem] phone1-sm:mt-[34rem] phone1-md:mt-[29rem] phone2-md:mt-[20rem] phone3-sm:mt-[24rem] phone3-md:mt-[21rem] phone3-md-lg:mt-[20rem] phone3-md-xl:mt-[19rem] phone3-lg-sm:mt-[19rem] phone3-lg:mt-[18rem] phone5:mt-[17rem] phone7:mt-[11rem] sm:!mt-0">
             <address className="pl-8 pt-9 ">
                 <h2 className="text-2xl text-dark-blue">Get in Touch With Us Today!</h2>
                 <div className="pt-3 text-lg text-black">
@@ -47,7 +47,7 @@ export default function Footer() {
                     </div>
                 </div>
             </aside>
-            <aside className="px-8 py-7 gap-0 h-fit md:flex md:gap-28">
+            <aside className="px-8 py-9 gap-0 h-fit md:flex md:gap-28">
                 <div className="flex flex-col">
                     <h2 className="text-2xl pb-3 text-black">Socials</h2>
                     <div className="grid grid-rows-3 gap-6 text-lg text-black md:flex md:flex-col md:grid-rows-none">
