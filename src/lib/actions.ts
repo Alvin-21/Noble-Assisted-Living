@@ -48,6 +48,10 @@ export async function sendEmail(prevState: State | undefined, formData: FormData
             text: `General Enquiry from ${fullName}. Please view this email in an HTML-compatible email client.`,
         });
         console.log(data);
+        return {
+            message: 'success',
+            errors: {},
+        };
     } catch (error) {
         console.error(error);
     }
