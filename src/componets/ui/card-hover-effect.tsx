@@ -34,7 +34,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 h-full lg:grid-cols-4 py-10",
+        "grid grid-cols-1 md:grid-cols-2 h-full lg:grid-cols-4 py-10 sm:justify-self-center",
         className
       )}
     >
@@ -77,7 +77,7 @@ export const HoverEffect = ({
           >
             <Card
               ref={ref}
-              className="py-4 h-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue"
+              className="py-4 h-full sm:w-[30rem] md:w-full border border-transparent group-hover:border-cerulean relative z-20 bg-dark-blue"
             >
               <CardHeader className="overflow-visible py-2 flex justify-center">
                 <Image

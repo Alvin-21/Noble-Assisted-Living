@@ -1,22 +1,9 @@
-'use client';
-
 import { ArrowTopRightOnSquareIcon, EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
-import clsx from 'clsx';
-import { usePathname } from "next/navigation";
 
 export default function Footer() {
-    const pathname = usePathname();
-
     return (
-        <footer className={clsx("flex flex-col md:flex-row md:justify-between md:h-full md:pb-4 md:px-14 bg-gradient-to-l from-java to-corn",
-            {
-                'phone:mt-0 phone1:mt-0 phone2:mt-0 phone3:mt-0 phone4:mt-0 phone5:mt-0 phone6:mt-0 phone7:mt-0 sm:!mt-0': pathname === '/about-us' || '/services' || '/contact-us',
-            },
-            {
-                'phone-xs:mt-[35rem] phone-xs-md:mt-[34rem] phone-sm-sm:mt-[32rem] phone-sm:mt-[31rem] phone-md:mt-[30rem] phone-lg:mt-[30rem] phone-lg-md:mt-[28rem] phone-xl:mt-[28rem] phone1-sm:mt-[34rem] phone1-md:mt-[29rem] phone2-md:mt-[20rem] phone3-sm:mt-[24rem] phone3-md:mt-[21rem] phone3-md-lg:mt-[20rem] phone3-md-xl:mt-[19rem] phone3-lg-sm:mt-[19rem] phone3-lg:mt-[18rem] phone4:mt-[17rem] phone5:mt-[17rem] phone6:mt-[17rem] phone7:mt-[11rem] sm:!mt-0': pathname === '/',
-            }
-        )}>
+        <footer className="flex flex-col md:flex-row md:justify-between md:h-full md:pb-4 md:px-14 bg-gradient-to-l from-java to-corn">
             <address className="pl-8 pt-9 ">
                 <h2 className="text-2xl text-dark-blue">Get in Touch With Us Today!</h2>
                 <div className="pt-3 text-lg text-black">
