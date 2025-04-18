@@ -51,6 +51,7 @@ const config: Config = {
         'phone-xl': { 'raw': '((min-width: 360px) and (min-height: 844px))' },
         'phone1': '375px',
         'phone1-sm': { 'raw': '((min-width: 375px) and (min-height: 667))' },
+        'phone1-md-sm': { 'raw': '((min-width: 375px) and (min-height: 800px))' },
         'phone1-md': { 'raw': '((min-width: 375px) and (min-height: 812px))' },
         'phone2': '390px',
         'phone2-md': { 'raw': '((min-width: 390px) and (min-height: 844px))' },
