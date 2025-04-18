@@ -38,12 +38,15 @@ export default function Home() {
         </section>
         <ImagesSlider images={images} className="md:rounded-l-xl h-full w-full" direction="left" />
       </div>
-      <section className="bg-corn sm:h-[1900px] lg:!h-[44rem] phone:h-[2300px] phone1:h-[2250px] phone2:h-[2220px] phone3:h-[2170px] phone4:h-[2150px] phone5:h-[2070px] phone6:h-[2000px] phone7:h-[1930px] md:!h-[71rem] lg:!h-[45rem]">
+      <section className="bg-corn">
         <CardHoverEffect />
       </section>
-      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:!h-full lg:!h-[35rem] phone-xs:h-[100vh] phone:h-[90vh] bg-cerulean">
-        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl sm:!h-full w-full phone-xs:h-[45vh] phone:h-[40vh] phone7:h-[50vh]" direction="right" />
-        <article className="px-8 py-3 bg-cerulean phone5:h-[39rem] phone7:h-[33rem] sm:!h-[30rem] md:!h-fit lg:!h-[35rem] phone-xs:h-[55rem] phone2:h-[47rem]">
+      <div className="h-fit bg-cerulean md:hidden">
+        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl h-fit w-full" direction="right" />
+      </div>
+      <section className="grid grid-rows-1 md:grid-rows-none md:grid-cols-2 gap-0 h-fit bg-cerulean">
+        <ImagesSlider images={imagesWelcome} className="hidden md:block md:rounded-r-xl h-full w-full" direction="right" />
+        <article className="px-8 py-3 bg-cerulean h-fit">
           <small className="text-base text-white">Welcome to</small>
           <br />
           <div className="mt-3"></div>

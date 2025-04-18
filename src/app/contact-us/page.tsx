@@ -16,7 +16,7 @@ export default function Page() {
                 <div className="pt-3"></div>
                 <hr className="border-b-2 border-b-java border-dashed" />
             </div>
-            <div className="pb-7 min-h-[95vh]">
+            <div className="pb-7 h-fit">
                 <div className="flex flex-col text-java text-center bg-dark-blue max-w-3xl mx-8 md:mx-auto px-7 pt-7 rounded-t-xl">
                     <small className="text-xl text-corn">Reach out to us.</small>
                     <h1 className="text-4xl">We are happy to hear from you! <FaceSmileIcon className="w-9 inline text-corn pb-1" /></h1>
