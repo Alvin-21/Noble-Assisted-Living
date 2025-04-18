@@ -53,7 +53,7 @@ const config: Config = {
         'phone1-sm': { 'raw': '((min-width: 375px) and (min-height: 667))' },
         'phone1-md': { 'raw': '((min-width: 375px) and (min-height: 812px))' },
         'phone2': '390px',
-        'phone2-md': { 'raw': '((min-width: 375px) and (min-height: 844px))' },
+        'phone2-md': { 'raw': '((min-width: 390px) and (min-height: 844px))' },
         'phone3': '412px',
         'phone3-sm': { 'raw': '((min-width: 412px) and (min-height: 732px))' },
         'phone3-md': { 'raw': '((min-width: 412px) and (min-height: 823px))' },
