@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 bg-cerulean h-[91vh]">
+      <div className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 bg-cerulean h-[50rem] sm:h-[39.5rem]">
         <section className="order-last md:order-first content-center pl-8 pt-4 bg-gradient-to-l from-cerulean to-gray-400">
           <header>
             <small className="text-lg text-white">Embrace the comfort</small>
@@ -38,12 +38,12 @@ export default function Home() {
         </section>
         <ImagesSlider images={images} className="md:rounded-l-xl h-full w-full" direction="left" />
       </div>
-      <section className="bg-corn sm:h-[1900px] lg:h-[44rem] phone:h-[2300px] phone1:h-[2250px] phone2:h-[2200px] phone3:h-[2150px] md:h-[73rem]">
+      <section className="bg-corn sm:h-[1900px] lg:!h-[44rem] phone:h-[2300px] phone1:h-[2250px] phone2:h-[2220px] phone3:h-[2170px] phone4:h-[2150px] phone5:h-[2070px] phone6:h-[2000px] phone7:h-[1930px] md:!h-[71rem] lg:!h-[45rem]">
         <CardHoverEffect />
       </section>
-      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:h-full phone:h-[90vh] bg-cerulean">
-        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl sm:h-full w-full phone:h-[40vh]" direction="right" />
-        <article className="px-8 py-3 bg-cerulean lg:h-[35rem] md:h-[43rem] phone:h-[57rem] phone3:h-[47rem] phone2:h-[49rem] border- border-black">
+      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:!h-full lg:!h-[38rem] phone-xs:h-[100vh] phone:h-[90vh] bg-cerulean">
+        <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl sm:!h-full w-full phone-xs:h-[45vh] phone:h-[40vh] phone7:h-[50vh]" direction="right" />
+        <article className="px-8 py-3 bg-cerulean phone5:h-[39rem] phone7:h-[33rem] sm:!h-[30rem] md:!h-fit lg:!h-[35rem] phone-xs:h-[55rem] phone2:h-[47rem]">
           <small className="text-base text-white">Welcome to</small>
           <br />
           <div className="mt-3"></div>

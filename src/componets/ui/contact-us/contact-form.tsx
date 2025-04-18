@@ -1,29 +1,52 @@
 'use client';
 
+import React from "react";
 import { Input, Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
 import { sendEmail, State } from "@/lib/actions";
 import { useActionState, startTransition } from 'react';
+import { Alert } from "@heroui/alert";
 
 export default function Form() {
     const initialState: State = { message: null, errors: {} };
-    const [state, formAction] = useActionState(sendEmail, initialState);
+    const [state, formAction, loading] = useActionState(sendEmail, initialState);
+    const [showAlert, setShowAlert] = React.useState(false);
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // console.log('hello');
+        
         const formData = new FormData(e.currentTarget);
-        // for (const [key, value] of formData.entries()) {
-        //     console.log(`${key}: ${value}`);
-        // }
+
         startTransition(() => {
             formAction(formData);
+            setShowAlert(true);
         });
+
+        e.currentTarget.reset();
     };
 
     return (
         <>
             <form onSubmit={onSubmit} className="flex flex-col gap-8 max-w-3xl mx-8 md:mx-auto bg-dark-blue p-7 rounded-b-xl">
+                <Alert
+                    variant="solid"
+                    isClosable
+                    className="max-w-xl mx-auto"
+                    isVisible={showAlert}
+                    onClose={() => setShowAlert(false)}
+                    color={
+                        state?.message === "success" ? "success" : "danger"
+                    }
+                    description={
+                        state?.message === "success"
+                            ? "Your message has been sent successfully."
+                            : "There was an error sending your message. Please try again."
+                    }
+                    title={
+                        state?.message === "success" ? "Success" : "Error"
+                    }
+                    hideIconWrapper
+                />
                 <div>
                     <Input
                         id="fullName"
@@ -128,7 +151,14 @@ export default function Form() {
                             ))}
                     </div>
                 </div>
-                <Button type="submit" variant="solid" className="bg-cerulean rounded-lg text-white text-lg">Send</Button>
+                <Button
+                    type="submit"
+                    variant="solid"
+                    className="bg-cerulean rounded-lg text-white text-lg"
+                    isLoading={loading}
+                >
+                    Send
+                </Button>
             </form>
         </>
     );
