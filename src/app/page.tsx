@@ -41,7 +41,7 @@ export default function Home() {
       <section className="bg-corn sm:h-[1900px] lg:!h-[44rem] phone:h-[2300px] phone1:h-[2250px] phone2:h-[2220px] phone3:h-[2170px] phone4:h-[2150px] phone5:h-[2070px] phone6:h-[2000px] phone7:h-[1930px] md:!h-[71rem] lg:!h-[45rem]">
         <CardHoverEffect />
       </section>
-      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:!h-full lg:!h-[38rem] phone-xs:h-[100vh] phone:h-[90vh] bg-cerulean">
+      <section className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-0 sm:!h-full lg:!h-[35rem] phone-xs:h-[100vh] phone:h-[90vh] bg-cerulean">
         <ImagesSlider images={imagesWelcome} className="md:rounded-r-xl sm:!h-full w-full phone-xs:h-[45vh] phone:h-[40vh] phone7:h-[50vh]" direction="right" />
         <article className="px-8 py-3 bg-cerulean phone5:h-[39rem] phone7:h-[33rem] sm:!h-[30rem] md:!h-fit lg:!h-[35rem] phone-xs:h-[55rem] phone2:h-[47rem]">
           <small className="text-base text-white">Welcome to</small>
