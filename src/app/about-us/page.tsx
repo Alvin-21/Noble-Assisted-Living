@@ -27,8 +27,8 @@ export default function Page() {
             </div>
             <ExpandableCard />
             <div className="flex justify-center gap-4 pb-10">
-                <h1 className="inline sm:text-5xl phone:text-4xl font-semibold">Our </h1>
-                <h1 className="inline text-cerulean sm:text-5xl phone:text-4xl font-semibold">Community</h1>
+                <h1 className="inline sm:text-5xl text-4xl font-semibold">Our </h1>
+                <h1 className="inline text-cerulean sm:text-5xl text-4xl font-semibold">Community</h1>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-5 gap-5 justify-items-center pb-5 h-[30rem] md:h-[40rem] overflow-y-scroll">
                 {images.map((image) => (
