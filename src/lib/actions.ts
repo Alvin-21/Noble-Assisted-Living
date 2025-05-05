@@ -37,6 +37,7 @@ export async function sendEmail(prevState: State | undefined, formData: FormData
 
     const { fullName, email } = validatedFields.data;
 
+    
     try {
         const resend = new Resend(process.env.RESEND_API_KEY);
         const { data } = await resend.emails.send({
