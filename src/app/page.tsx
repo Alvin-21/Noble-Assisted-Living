@@ -6,15 +6,15 @@ import { ImagesSlider } from "@/componets/ui/ImageSlider";
 
 export default function Home() {
   const images = [
-    "/images/assisted-living-1.webp",
-    "/images/assisted-living-11.webp",
-    "/images/assisted-living-9.webp",
+    "https://ik.imagekit.io/alvinawuor/assisted-living-1.webp",
+    "https://ik.imagekit.io/alvinawuor/assisted-living-11.webp",
+    "https://ik.imagekit.io/alvinawuor/assisted-living-9.webp",
   ];
 
   const imagesWelcome = [
-    "/images/assisted-living-4.webp",
-    "/images/assisted-living-15.webp",
-    "/images/gallery-1.webp",
+    "https://ik.imagekit.io/alvinawuor/assisted-living-4.webp",
+    "https://ik.imagekit.io/alvinawuor/assisted-living-15.webp",
+    "https://ik.imagekit.io/alvinawuor/gallery-1.webp",
   ];
 
   return (
