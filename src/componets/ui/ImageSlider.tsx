@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export function ImagesSlider({ images, className, direction }: { images: string[], className?: string, direction?: "left" | "right" }) {
     const [index, setIndex] = useState(0);
@@ -16,11 +17,8 @@ export function ImagesSlider({ images, className, direction }: { images: string[
   
     return (
         <AnimatePresence mode="wait">
-          <motion.img
+          <motion.figure
             key={images[index]}
-            src={images[index]}
-            alt="Slideshow"
-            className={className}
             initial={
                 direction === 'left' ? {opacity: 0, x: 100 } : { opacity: 0, x: -100 }
             }
@@ -29,7 +27,15 @@ export function ImagesSlider({ images, className, direction }: { images: string[
                 direction === 'right' ? {opacity: 0, x: 100 } : { opacity: 0, x: -100 }
             }
             transition={{ duration: 1, ease: "easeInOut" }}
-          />
+          >
+            <Image 
+              src={images[index]}
+              alt="Slideshow"
+              width={500}
+              height={500}
+              className={className}
+            />
+          </motion.figure>
         </AnimatePresence>
     );
 }
