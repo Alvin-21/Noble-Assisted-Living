@@ -15,10 +15,6 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <Image className="h-fit md:h-[83vh]" src={pic} alt="A person helping an elderly with their groceries." />
-            <div className="max-h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
-                <ServicesArrowDown />
-            </div>
             <div className="min-h-[10vh] w-full mt-8 px-8 pb-2">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
