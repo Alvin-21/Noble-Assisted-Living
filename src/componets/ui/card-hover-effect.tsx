@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, useInView } from "motion/react";
-import Link from "next/link";
 import { useState, useRef } from "react";
 import { Card, CardHeader, CardBody, Image } from "@heroui/react";
 
@@ -39,7 +38,7 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <Link
+        <a
           href={item?.link}
           key={item?.link}
           className="relative group block p-2 h-full w-full"
@@ -102,7 +101,7 @@ export const HoverEffect = ({
               </CardBody>
             </Card>
           </motion.div>
-        </Link>
+        </a>
       ))}
     </div>
   );
