@@ -1,12 +1,10 @@
 import Image from "next/image";
-import pic from '@/../public/images/assisted-living-12.webp';
 import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import pic2 from '@/../public/images/assisted-living-13.webp';
 import pic3 from '@/../public/images/assisted-living-8.webp';
 import pic4 from '@/../public/images/assisted-living-2.webp';
 import pic5 from '@/../public/images/assisted-living-7.webp';
 import { Metadata } from 'next';
-import ServicesArrowDown from "@/componets/ui/ServicesArrowDown";
 
 export const metadata: Metadata = {
     title: 'Services',
@@ -15,10 +13,6 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <Image className="h-fit md:h-[83vh]" src={pic} alt="A person helping an elderly with their groceries." />
-            <div className="max-h-[8vh] bg-cerulean py-2 px-8 flex justify-center text-light-corn">
-                <ServicesArrowDown />
-            </div>
             <div className="min-h-[10vh] w-full mt-8 px-8 pb-2">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
                 <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>

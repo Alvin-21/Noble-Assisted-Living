@@ -1,4 +1,3 @@
-import { AuroraBackgroundDemo } from "@/componets/ui/AuroraBackground";
 import { ExpandableCard } from "@/componets/ui/ExpandableCard";
 import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import { HeartIcon } from "@heroicons/react/24/outline";
@@ -12,10 +11,10 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <AuroraBackgroundDemo />
+            {/* <AuroraBackgroundDemo /> */}
             <div className="min-h-[10vh] w-full mt-8 px-8 pb-2">
                 <h4 className="inline text-lg text-cerulean font-semibold">Home <ChevronDoubleRightIcon className="w-5 inline text-black" /></h4>
-                <h4 className="inline text-lg text-dark-corn font-semibold"> Services</h4>
+                <h4 className="inline text-lg text-dark-corn font-semibold"> About Us</h4>
                 <div className="pt-3"></div>
                 <hr className="border-b-2 border-b-java border-dashed" />
             </div>
