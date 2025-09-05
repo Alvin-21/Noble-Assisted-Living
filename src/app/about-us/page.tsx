@@ -1,4 +1,3 @@
-import { AuroraBackgroundDemo } from "@/componets/ui/AuroraBackground";
 import { ExpandableCard } from "@/componets/ui/ExpandableCard";
 import { ChevronDoubleRightIcon } from "@heroicons/react/20/solid";
 import { HeartIcon } from "@heroicons/react/24/outline";
