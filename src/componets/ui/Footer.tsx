@@ -41,6 +41,9 @@ export default function Footer() {
                         <Link href="/services" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">
                             Services
                         </Link>
+                        <Link href="/gallery" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">
+                            Gallery
+                        </Link>
                         <Link href="/contact-us" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">
                             Contact Us
                         </Link>
