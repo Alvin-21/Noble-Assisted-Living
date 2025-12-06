@@ -23,20 +23,6 @@ const SkeletonOne = () => {
     </div>
   );
 };
-
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <p className="font-bold md:text-4xl text-xl text-white">
-        Covered Deck with Fire Pit
-      </p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        An outdoor deck area covered by a slatted canopy, furnished with seating, a grill, and a central gas fire pit on a patterned outdoor rug.
-      </p>
-    </div>
-  );
-};
 const SkeletonThree = () => {
   return (
     <div>
