@@ -110,11 +110,11 @@ const SkeletonNine = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Retro-Style Bathroom
+        Living Room with Fireplace and Work Area
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A bathroom with dark wood laminate flooring, an oak vanity with a pink countertop, and a shower/tub area with a patterned curtain.
+        A carpeted living space with a TV mounted over a fireplace, a black leather couch, and two dedicated wooden desk areas.
       </p>
     </div>
   );
@@ -138,11 +138,11 @@ const SkeletonEleven = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Living Room with Fireplace and Work Area
+        Retro-Style Bathroom
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A carpeted living space with a TV mounted over a fireplace, a black leather couch, and two dedicated wooden desk areas.
+        A bathroom with dark wood laminate flooring, an oak vanity with a pink countertop, and a shower/tub area with a patterned curtain.
       </p>
     </div>
   );
@@ -180,7 +180,7 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "row-span-2 col-span-1 sm:row-span-1 sm:col-span-2",
+    className: "row-span-2 col-span-1 sm:row-span-1 sm:col-span-2 lg:col-span-3",
     thumbnail:
       "https://ik.imagekit.io/alvinawuor/34%20(2).jpg",
   },
