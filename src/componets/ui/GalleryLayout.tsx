@@ -54,11 +54,11 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Secondary Kitchenette/Bar Area
+        Secondary Kitchenette
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A small secondary kitchen or wet bar area with light grey cabinets, a stainless steel refrigerator, and a fold-down wooden counter/table against the wall.
+        A small secondary kitchen with light grey cabinets, a stainless steel refrigerator, and a fold-down wooden counter/table against the wall.
       </p>
     </div>
   );
@@ -68,7 +68,7 @@ const SkeletonFive = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Master Bedroom with Built-in Shelving
+        Client Bedroom with Built-in Shelving
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -96,7 +96,7 @@ const SkeletonSeven = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Guest Bedroom
+        Client Bedroom
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
@@ -199,13 +199,6 @@ const cards = [
       "https://ik.imagekit.io/alvinawuor/34%20(2).jpg",
   },
   {
-    id: 2,
-    content: <SkeletonTwo />,
-    className: "row-span-2 col-span-1 sm:row-span-1",
-    thumbnail:
-      "https://ik.imagekit.io/alvinawuor/36.jpg",
-  },
-  {
     id: 3,
     content: <SkeletonThree />,
     className: "row-span-2 col-span-1 lg:row-span-1 lg:col-span-3",
@@ -222,7 +215,7 @@ const cards = [
   {
     id: 5,
     content: <SkeletonFive />,
-    className: "row-span-2 col-span-1 sm:col-span-2 lg:row-span-1 lg:col-span-1",
+    className: "row-span-2 col-span-1 sm:row-span-1 sm:col-span-1 lg:row-span-1 lg:col-span-1",
     thumbnail:
       "https://ik.imagekit.io/alvinawuor/33.jpg",
   },
@@ -252,7 +245,7 @@ const cards = [
     content: <SkeletonNine />,
     className: "row-span-2 col-span-1 sm:row-span-1 lg:col-span-2",
     thumbnail:
-      "https://ik.imagekit.io/alvinawuor/IMG_5146.JPEG",
+      "https://ik.imagekit.io/alvinawuor/IMG_5140.JPEG",
   },
   {
     id: 10,
@@ -266,7 +259,7 @@ const cards = [
     content: <SkeletonEleven />,
     className: "row-span-2 col-span-1 sm:row-span-1",
     thumbnail:
-      "https://ik.imagekit.io/alvinawuor/IMG_5140.JPEG",
+      "https://ik.imagekit.io/alvinawuor/IMG_5146.JPEG",
   },
   {
     id: 12,
