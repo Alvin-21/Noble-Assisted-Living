@@ -6,6 +6,7 @@ import Navbar from "@/componets/ui/Navbar";
 import Footer from "@/componets/ui/Footer";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
+          <Script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="1b0sTRLYd7Wqh2XAl" data-version="062024"></Script>
           <Navbar />
           <main>{children}</main>
           <Footer />
