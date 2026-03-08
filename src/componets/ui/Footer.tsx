@@ -44,6 +44,7 @@ export default function Footer() {
                         <Link href="/gallery" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">
                             Gallery
                         </Link>
+                        <Link href="/referrals" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">Referrals</Link>
                         <Link href="/contact-us" className="border-b-black border-b-1 pb-1 mr-8 hover:text-primary hover:cursor-pointer">
                             Contact Us
                         </Link>
