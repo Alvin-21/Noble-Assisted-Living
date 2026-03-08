@@ -3,13 +3,13 @@
 import React from "react";
 import { Input, Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
-import { sendEmail, State } from "@/lib/actions";
+import { sendReferralEmail, State2 } from "@/lib/actions";
 import { useActionState, startTransition } from 'react';
 import { Alert } from "@heroui/alert";
 
 export default function Form() {
-    const initialState: State = { message: null, errors: {} };
-    const [state, formAction, loading] = useActionState(sendEmail, initialState);
+    const initialState: State2 = { message: null, errors: {} };
+    const [state, formAction, loading] = useActionState(sendReferralEmail, initialState);
     const [showAlert, setShowAlert] = React.useState(false);
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -39,8 +39,8 @@ export default function Form() {
                     }
                     description={
                         state?.message === "success"
-                            ? "Your message has been sent successfully."
-                            : "There was an error sending your message. Please try again."
+                            ? "The form has been submitted successfully."
+                            : "There was an error submitting the form. Please try again."
                     }
                     title={
                         state?.message === "success" ? "Success" : "Error"
@@ -89,7 +89,6 @@ export default function Form() {
                             inputMode="tel"
                             variant="bordered"
                             size="lg"
-                            pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
                             classNames={{
                                 inputWrapper: [
                                     "border-2 border-solid",
@@ -109,8 +108,8 @@ export default function Form() {
                             }}
                         />
                         <div id="phoneNumber-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.email &&
-                                state.errors.email.map((error: string) => (
+                            {state?.errors?.phoneNumber &&
+                                state.errors.phoneNumber.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -141,8 +140,8 @@ export default function Form() {
                             }}
                         />
                         <div id="birthDate-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.birthDate &&
+                                state.errors.birthDate.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -175,8 +174,8 @@ export default function Form() {
                             }}
                         />
                         <div id="insuranceProvider-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.insuranceProvider &&
+                                state.errors.insuranceProvider.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -207,8 +206,8 @@ export default function Form() {
                             }}
                         />
                         <div id="primaryDiagnosis-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.primaryDiagnosis &&
+                                state.errors.primaryDiagnosis.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -240,8 +239,8 @@ export default function Form() {
                         }}
                     />
                     <div id="caseManager-error" aria-live="polite" aria-atomic="true">
-                        {state?.errors?.fullName &&
-                            state.errors.fullName.map((error: string) => (
+                        {state?.errors?.caseManager &&
+                            state.errors.caseManager.map((error: string) => (
                                 <p className="mt-2 text-sm text-rose-300" key={error}>
                                     {error}
                                 </p>
@@ -277,8 +276,8 @@ export default function Form() {
                         size="lg"
                     />
                     <div id="message-error" aria-live="polite" aria-atomic="true">
-                        {state?.errors?.message &&
-                            state.errors.message.map((error: string) => (
+                        {state?.errors?.aald &&
+                            state.errors.aald.map((error: string) => (
                                 <p className="mt-2 text-sm text-rose-300" key={error}>
                                     {error}
                                 </p>
@@ -310,8 +309,8 @@ export default function Form() {
                             }}
                         />
                         <div id="caseManagerCompany-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.caseManagerCompany &&
+                                state.errors.caseManagerCompany.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -327,7 +326,6 @@ export default function Form() {
                             inputMode="tel"
                             variant="bordered"
                             size="lg"
-                            pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
                             classNames={{
                                 inputWrapper: [
                                     "border-2 border-solid",
@@ -347,8 +345,8 @@ export default function Form() {
                             }}
                         />
                         <div id="CMphoneNumber-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.email &&
-                                state.errors.email.map((error: string) => (
+                            {state?.errors?.CMphoneNumber &&
+                                state.errors.CMphoneNumber.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -381,8 +379,8 @@ export default function Form() {
                             }}
                         />
                         <div id="caseManagerFax-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.caseManagerFax &&
+                                state.errors.caseManagerFax.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
@@ -413,8 +411,8 @@ export default function Form() {
                             }}
                         />
                         <div id="caseManagerEmail-error" aria-live="polite" aria-atomic="true">
-                            {state?.errors?.fullName &&
-                                state.errors.fullName.map((error: string) => (
+                            {state?.errors?.caseManagerEmail &&
+                                state.errors.caseManagerEmail.map((error: string) => (
                                     <p className="mt-2 text-sm text-rose-300" key={error}>
                                         {error}
                                     </p>
